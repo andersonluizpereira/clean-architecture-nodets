@@ -51,6 +51,7 @@
   "dependencies": {
     "bcrypt": "^3.0.8",
     "express": "^4.17.1",
+    "fast-glob": "^3.2.2",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.5.6",
     "nodemon": "^2.0.3",
