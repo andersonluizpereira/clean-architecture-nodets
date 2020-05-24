@@ -1,8 +1,8 @@
 import { InvalidParamError } from '../../errors'
-import { CompareFieldValidation } from './compare-fields-validation'
+import { CompareFieldsValidation } from './compare-fields-validation'
 
-const makeSut = (): CompareFieldValidation => {
-  return new CompareFieldValidation('field', 'fieldToCompare')
+const makeSut = (): CompareFieldsValidation => {
+  return new CompareFieldsValidation('field', 'fieldToCompare')
 }
 
 describe('CompareFields Validation', () => {
