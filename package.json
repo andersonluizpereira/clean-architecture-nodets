@@ -5,6 +5,7 @@
   "author": "Anderson Pereira",
   "license": "ISC",
   "scripts": {
+    "start": "node dist/main/server.js",
     "dev": "sucrase-node src/main/server.ts",
     "build": "rimraf dist && tsc -p tsconfig-build.json",
     "postbuild": "copyfiles -u 1 public/**/* dist/static",
@@ -55,7 +56,6 @@
   "dependencies": {
     "bcrypt": "^4.0.1",
     "express": "^4.17.1",
-    "fast-glob": "^3.2.2",
     "jsonwebtoken": "^8.5.1",
     "module-alias": "^2.2.2",
     "mongodb": "^3.5.7",
