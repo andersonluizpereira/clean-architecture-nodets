@@ -1,7 +1,7 @@
 import { HttpRequest, AddSurveyModel, AddSurvey } from './add-survey-controller-protocols'
 import { AddSurveyController } from './add-survey-controller'
 import { Validation } from '../../login/login/login-controller-protocols'
-import { badRequest, serverError, noContent } from '@/presentation/helpers/http/http-helper'
+import { badRequest, serverError, noContent } from '../../../../presentation/helpers/http/http-helper'
 
 const makeFakeRequest = (): HttpRequest => ({
   body: {

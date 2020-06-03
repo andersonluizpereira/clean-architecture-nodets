@@ -3,7 +3,7 @@ import { MissingParamError, ServerError } from '../../../errors'
 import { AccountModel, AddAccount, AddAccountModel, Validation, Authentication, AuthenticationModel } from './signup-controller-protocols'
 import { HttpRequest } from '../../../protocols'
 import { ok, serverError, badRequest, forbidden } from '../../../helpers/http/http-helper'
-import { EmailInUseError } from '@/presentation/errors/email-in-use-error'
+import { EmailInUseError } from '../../../../presentation/errors/email-in-use-error'
 
 const makeAuthentication = (): Authentication => {
   class AuthenticationStub implements Authentication {
