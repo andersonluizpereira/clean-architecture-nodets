@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/andersonluizpereira/clean-architecture-nodets.svg?branch=master)](https://travis-ci.org/andersonluizpereira/clean-architecture-nodets)
+
+[![Coverage Status](https://coveralls.io/repos/github/andersonluizpereira/clean-architecture-nodets/badge.svg?branch=master)](https://coveralls.io/github/andersonluizpereira/clean-architecture-nodets?branch=master)
+
 # **Clean Node API**
 
 Essa API faz parte do treinamento do professor Rodrigo Manguinho (Mango) na Udemy.
