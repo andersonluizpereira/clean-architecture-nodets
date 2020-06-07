@@ -1,6 +1,7 @@
 import { LoadSurveyRepository } from '../../../data/protocols/db/survey/load-surveys-repository'
 import { SurveyModel } from '../../../domain/model/survey'
 import { DbLoadSurveys } from './db-load-surveys'
+import MockDate from 'mockdate'
 
 const makeFakeSurveys = (): SurveyModel[] => {
   return [{
@@ -44,6 +45,12 @@ const makeSut = (): SutTypes => {
   }
 }
 describe('DbLoadSurveys', () => {
+  beforeAll(() => {
+    MockDate.set(new Date())
+  })
+  afterAll(() => {
+    MockDate.reset()
+  })
   test('Should call LoadSurveyRepository', async () => {
     const { sut, loadSurveyRepositoryStub } = makeSut()
     const loadAllSpy = jest.spyOn(loadSurveyRepositoryStub, 'loadAll')
@@ -54,5 +61,11 @@ describe('DbLoadSurveys', () => {
     const { sut } = makeSut()
     const surveys = await sut.load()
     expect(surveys).toEqual(makeFakeSurveys())
+  })
+  test('Should throw if loadSurveyRepositoryStub throws', async () => {
+    const { sut, loadSurveyRepositoryStub } = makeSut()
+    jest.spyOn(loadSurveyRepositoryStub, 'loadAll').mockReturnValueOnce(new Promise((resolve, reject) => reject(new Error())))
+    const promise = sut.load()
+    await expect(promise).rejects.toThrow()
   })
 })
