@@ -1,6 +1,3 @@
-[![Build Status](https://travis-ci.org/andersonluizpereira/clean-ts-api.svg?branch=master)](https://travis-ci.org/andersonluizpereira/clean-ts-api)
-[![Coverage Status](https://coveralls.io/repos/github/andersonluizpereira/clean-ts-api/badge.svg)](https://coveralls.io/github/andersonluizpereira/clean-ts-api)
-
 # **Clean Node API**
 
 Essa API faz parte do treinamento do professor Rodrigo Manguinho (Mango) na Udemy.
