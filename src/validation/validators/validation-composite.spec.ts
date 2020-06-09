@@ -1,6 +1,6 @@
 import { ValidationComposite } from './validation-composite'
-import { MissingParamError } from '../../presentation/errors'
-import { Validation } from '../../presentation/controllers/login/signup/signup-controller-protocols'
+import { MissingParamError } from '@/presentation/errors'
+import { Validation } from '@/presentation/controllers/login/signup/signup-controller-protocols'
 
 const makeValidation = (): Validation => {
   class ValidationStub implements Validation {

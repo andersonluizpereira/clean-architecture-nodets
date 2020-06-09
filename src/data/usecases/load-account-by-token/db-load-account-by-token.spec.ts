@@ -1,7 +1,7 @@
 import { Decrypter } from '../../protocols/criptography/decrypter'
 import { DbLoadAccountByToken } from './db-load-account-by-token'
 import { AccountModel } from '../add-account/db-add-account.protocols'
-import { LoadAccountByTokenRepository } from '../../../data/protocols/db/account/load-account-by-token-repository'
+import { LoadAccountByTokenRepository } from '@/data/protocols/db/account/load-account-by-token-repository'
 
 describe('DbLoadAccountByToken Usecase', () => {
   const makeLoadAccountByTokenRepositoryStub = (): LoadAccountByTokenRepository => {
