@@ -1,5 +1,8 @@
 [![Build Status](https://travis-ci.org/andersonluizpereira/clean-architecture-nodets.svg?branch=master)](https://travis-ci.org/andersonluizpereira/clean-architecture-nodets)
 [![Coverage Status](https://coveralls.io/repos/github/andersonluizpereira/clean-architecture-nodets/badge.svg?branch=master)](https://coveralls.io/github/andersonluizpereira/clean-architecture-nodets?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a357eccfca80b21ca8e3/maintainability)](https://codeclimate.com/github/andersonluizpereira/clean-architecture-nodets/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a357eccfca80b21ca8e3/test_coverage)](https://codeclimate.com/github/andersonluizpereira/clean-architecture-nodets/test_coverage)
+
 
 # **Clean Node API**
 
