@@ -1,8 +1,8 @@
 import { MongoHelper } from '../helpers/mongo-helper'
 import { Collection } from 'mongodb'
 import { SurveyResultMongoRepository } from './survey-result-mongo-repository'
-import { SurveyModel } from '@/domain/model/survey'
-import { AccountModel } from '@/domain/model/account'
+import { SurveyModel } from '@/domain/models/survey'
+import { AccountModel } from '@/domain/models/account'
 
 let surveyCollection: Collection
 let surveyResultCollection: Collection
