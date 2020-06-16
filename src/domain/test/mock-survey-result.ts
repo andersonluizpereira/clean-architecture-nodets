@@ -23,3 +23,15 @@ export const mockSurveyResultModel = (): SurveyResultModel => ({
   }],
   date: new Date()
 })
+
+export const mockEmptySurveyResultModel = (): SurveyResultModel => ({
+  surveyId: 'any_id',
+  question: 'any_question',
+  answers: [{
+    answer: 'any_answer',
+    count: 0,
+    image: 'any_image',
+    percent: 0
+  }],
+  date: new Date()
+})
