@@ -1,9 +1,9 @@
-import { Validation } from '@/presentation/protocols/validation'
-import { RequiredFieldValidation, EmailValidation, ValidationComposite } from '@/validation/validators'
 import { makeLoginValidation } from './login-validation-factory'
-import { mockEmailValidator } from '@/validation/test'
+import { ValidationComposite, RequiredFieldValidation, EmailValidation } from '@/validation/validators'
+import { Validation } from '@/presentation/protocols/validation'
+import { EmailValidatorAdapter } from '@/infra/validators/email-validator-adapter'
 
-jest.mock('@/validation/validators/validation-composite.ts')
+jest.mock('@/validation/validators/validation-composite')
 
 describe('LoginValidation Factory', () => {
   test('Should call ValidationComposite with all validations', () => {
@@ -12,7 +12,7 @@ describe('LoginValidation Factory', () => {
     for (const field of ['email', 'password']) {
       validations.push(new RequiredFieldValidation(field))
     }
-    validations.push(new EmailValidation('email', mockEmailValidator()))
+    validations.push(new EmailValidation('email', new EmailValidatorAdapter()))
     expect(ValidationComposite).toHaveBeenCalledWith(validations)
   })
 })
