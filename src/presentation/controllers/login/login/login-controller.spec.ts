@@ -70,5 +70,6 @@ describe('Login Controller', () => {
     validationSpy.error = new MissingParamError(faker.random.word())
     const httpResponse = await sut.handle(mockRequest())
     expect(httpResponse).toEqual(badRequest(validationSpy.error))
+    expect(1).toBe(1)
   })
 })
